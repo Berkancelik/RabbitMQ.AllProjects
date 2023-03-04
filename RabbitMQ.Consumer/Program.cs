@@ -18,11 +18,12 @@ using IModel channel = connection.CreateModel();
 
 //Queue Created
 
-channel.QueueDeclare(queue: "example-queue", exclusive: false); // Consumer Queue  == Publicher Queue
+channel.QueueDeclare(queue: "example-queue", exclusive: false, durable:false); // Consumer Queue  == Publicher Queue
 EventingBasicConsumer consumer = new(channel);
 
 //autoAck mesaj kuruktan alındıktan sonra silinip silinemesi
 channel.BasicConsume(queue: "example-queue", autoAck: false, consumer);
+channel.BasicQos(0, 1, false);
 
 //kuyruğa gelen mesajın işlendiği yer 
 consumer.Received += (sender, e) =>
