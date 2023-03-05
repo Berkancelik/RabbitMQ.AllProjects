@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Publisher", "Rabbi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Consumer", "RabbitMQ.Consumer\RabbitMQ.Consumer.csproj", "{911C89BC-9E98-4BD5-A435-46D551B4C36C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FanoutExchange.Consumer", "FanoutExchange.Consumer\FanoutExchange.Consumer.csproj", "{49993E84-C90F-4604-9EFB-A845D206A910}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutExchange.Consumer", "FanoutExchange.Consumer\FanoutExchange.Consumer.csproj", "{49993E84-C90F-4604-9EFB-A845D206A910}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FanoutExchange.Publisher", "FanoutExchange.Publisher\FanoutExchange.Publisher.csproj", "{D91A2F9F-43D6-45FA-A6AD-F142959252BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutExchange.Publisher", "FanoutExchange.Publisher\FanoutExchange.Publisher.csproj", "{D91A2F9F-43D6-45FA-A6AD-F142959252BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicExchange.Consumer", "TopicExchange.Consumer\TopicExchange.Consumer.csproj", "{1853DF48-0CB4-44C8-AB51-8B9B312F1681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicExchange.Publisher", "TopicExchange.Publisher\TopicExchange.Publisher.csproj", "{36B12CE3-208A-4597-9DA5-548E3A309AE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{D91A2F9F-43D6-45FA-A6AD-F142959252BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D91A2F9F-43D6-45FA-A6AD-F142959252BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D91A2F9F-43D6-45FA-A6AD-F142959252BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1853DF48-0CB4-44C8-AB51-8B9B312F1681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1853DF48-0CB4-44C8-AB51-8B9B312F1681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1853DF48-0CB4-44C8-AB51-8B9B312F1681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1853DF48-0CB4-44C8-AB51-8B9B312F1681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B12CE3-208A-4597-9DA5-548E3A309AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B12CE3-208A-4597-9DA5-548E3A309AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B12CE3-208A-4597-9DA5-548E3A309AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B12CE3-208A-4597-9DA5-548E3A309AE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
