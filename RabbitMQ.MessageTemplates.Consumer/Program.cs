@@ -14,7 +14,7 @@ factory.Uri = new("amqps://tfnsxluf:Q7118mxTG5u1eYr4qIUyUtwmG2C8PAm5@woodpecker.
 using IConnection connection = factory.CreateConnection();
 using IModel channel = connection.CreateModel();
 
-#region P'P (Point-To-Point) Design
+#region P2P (Point-To-Point) Design
 string queueName = "exampke-p2p-queue";
 
 channel.QueueDeclare(queue: queueName,
@@ -27,6 +27,8 @@ channel.BasicPublish(exchange: string.Empty,
     routingKey: queueName,
     body: message);
 #endregion
+
+
 
 
 
