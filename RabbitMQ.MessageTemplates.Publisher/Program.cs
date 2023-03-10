@@ -38,15 +38,41 @@ using IModel channel = connection.CreateModel();
 
 #region (Publis-Subscribe) Design
 
-string exchangeName = "example-pub-sub-exchange";
-channel.ExchangeDeclare(exchange: exchangeName, type: ExchangeType.Fanout);
+//string exchangeName = "example-pub-sub-exchange";
+//channel.ExchangeDeclare(exchange: exchangeName, type: ExchangeType.Fanout);
 
+//for (int i = 0; i < 100; i++)
+//{
+//    await Task.Delay(1000); 
+
+//    byte[] message = Encoding.UTF8.GetBytes("merhaba"+i);
+
+//    channel.BasicPublish(
+//        exchange: exchangeName,
+//        routingKey: string.Empty,
+//        body: message);
+//}
+
+
+#endregion
+
+#region (Workı Queue Design)
+
+string queueName = "example-work-queue";
+
+channel.QueueDeclare(queue: queueName,
+    durable: false, exclusive: false, autoDelete: false);
+ 
 for (int i = 0; i < 100; i++)
 {
-    byte[] message = Encoding.UTF8.GetBytes("merhaba"+i);
+    await Task.Delay(1000);
+
+    byte[] message = Encoding.UTF8.GetBytes("merhaba" + i);
 
     channel.BasicPublish(
-        exchange:exchangeName)
+        exchange: queueName,
+        routingKey: string.Empty,
+        body: message);
 }
 
 
