@@ -19,9 +19,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderExchange.Consumer", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderExchange.Publisher", "HeaderExchange.Publisher\HeaderExchange.Publisher.csproj", "{F55940A9-CFF7-44A9-9C2E-034F356CD3DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.MessageTemplates.Publisher", "RabbitMQ.MessageTemplates.Publisher\RabbitMQ.MessageTemplates.Publisher.csproj", "{F3808AF0-BAE7-404C-AC5F-F379275BF365}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.MessageTemplates.Publisher", "RabbitMQ.MessageTemplates.Publisher\RabbitMQ.MessageTemplates.Publisher.csproj", "{F3808AF0-BAE7-404C-AC5F-F379275BF365}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.MessageTemplates.Consumer", "RabbitMQ.MessageTemplates.Consumer\RabbitMQ.MessageTemplates.Consumer.csproj", "{9F16B987-75EE-4159-A29F-4C640D0ECC6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.MessageTemplates.Consumer", "RabbitMQ.MessageTemplates.Consumer\RabbitMQ.MessageTemplates.Consumer.csproj", "{9F16B987-75EE-4159-A29F-4C640D0ECC6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.Consumer", "RabbitMQ.ESB.MassTransit.Consumer\RabbitMQ.ESB.MassTransit.Consumer.csproj", "{F23A4A79-4ABA-4076-ADDF-5A1E886B4FB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.Publisher", "RabbitMQ.ESB.MassTransit.Publisher\RabbitMQ.ESB.MassTransit.Publisher.csproj", "{6A532810-2A3C-414B-B796-7C19BE490946}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.Shared", "ClassLibrary1\RabbitMQ.ESB.MassTransit.Shared.csproj", "{38077344-8DD2-492B-9FFA-2764B8729652}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +75,18 @@ Global
 		{9F16B987-75EE-4159-A29F-4C640D0ECC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F16B987-75EE-4159-A29F-4C640D0ECC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F16B987-75EE-4159-A29F-4C640D0ECC6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23A4A79-4ABA-4076-ADDF-5A1E886B4FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23A4A79-4ABA-4076-ADDF-5A1E886B4FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23A4A79-4ABA-4076-ADDF-5A1E886B4FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23A4A79-4ABA-4076-ADDF-5A1E886B4FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A532810-2A3C-414B-B796-7C19BE490946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A532810-2A3C-414B-B796-7C19BE490946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A532810-2A3C-414B-B796-7C19BE490946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A532810-2A3C-414B-B796-7C19BE490946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38077344-8DD2-492B-9FFA-2764B8729652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38077344-8DD2-492B-9FFA-2764B8729652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38077344-8DD2-492B-9FFA-2764B8729652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38077344-8DD2-492B-9FFA-2764B8729652}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
